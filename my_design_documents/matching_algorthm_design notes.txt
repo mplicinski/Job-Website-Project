@@ -1,0 +1,47 @@
+Matching algorithm - Initial idea
+
+Point system for matching
+
+Companies will see in the order the seekers with the most points to the least points for a job
+Seekers will see in order which jobs they scored the highest points for
+
+Technical skills based off of 1-5 scale of familiarity 
+Business skills based off of years of experience
+Cultural values work as tags (Must have at least one tag to be matched)
+
+Companies can set a greater importance on either tech & business skills OR cultural values for a job post.
+	This will set the weight of points from chosen category to be greater than the other
+	For example:
+		If a company sets a greater importance on cultural values
+		Then the points the employee gets from cultural value points will be given a weight of 70%
+		And the points the employee get from technical skill points will be given a weight of 30%
+			And vice versa
+
+If a job is NOT remote
+	A high amount of points will be given if a seeker lives in the same city as the company location. 30 points
+	A smaller amount of point will be given if a seeker lives in the same state as the company. 15 points
+	This is to weed out seekers who are not near the job
+		? Possible addition: seeker could indicate that they are willing to relocate and get some points. 20 points 
+
+For cultural tags
+	If seeker has at least 1 matching tag with company they will be added to the list of possible candidates
+	For each matching tag the seeker will be given 10 points
+
+For job post tech skill
+	If a seeker meets minimum skill level they gain 5 points
+		and if importance level >= 4 seeker gains bonus points for meeting minimum skill level.
+			bonus points = importance level/2
+	If a seeker meets minimum skill level-1 they gain 3 points
+	If a seeker meets minimum skill level-2 they gain 1 point
+
+For job post business skill
+	If a seeker exceeds minimum year of experience they gain 4 points
+		and extra-years-of-experience / 3 points
+		extra-years-of-experience = seeker total years of experience - minimum years
+	If a seeker meetings minimum years of experience they gains 4 points
+		and if importance level >= 4 seeker gains bonus points
+	If a seeker meets minimum years of experience-1 they gain 2 points
+
+
+	
+	
